@@ -6,7 +6,7 @@
 
 Name:           libcuobjclient
 Epoch:          1
-Version:        1.2.0.68
+Version:        1.3.0.109
 Release:        1%{?dist}
 Summary:        NVIDIA CUDA cuObject Client
 License:        CUDA Toolkit
@@ -62,11 +62,15 @@ sed -i \
 %files devel
 %doc README cuObjRDMADESCRprotocolformat.pdf
 %{_includedir}/cuobjclient.h
+%{_includedir}/cuobjextrc_types.h
 %{_includedir}/cuobjtelem.h
 %{_libdir}/libcuobjclient.so
 %{_libdir}/pkgconfig/cuobjclient.pc
 
 %changelog
+* Tue Sep 29 2026 Simone Caronni <negativo17@gmail.com> - 1:1.3.0.109-1
+- Update to 1.3.0.109.
+
 * Fri Aug 07 2026 Simone Caronni <negativo17@gmail.com> - 1:1.2.0.68-1
 - Update to 1.2.0.68.
 
